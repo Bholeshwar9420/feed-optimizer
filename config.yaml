@@ -16,4 +16,4 @@
 # The list of configurations used by MarkUp installation process.
 
 # The BigQuery dataset location.
-LOCATION: us
+LOCATION: EU
