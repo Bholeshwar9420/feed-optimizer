@@ -54,9 +54,9 @@ CREATE OR REPLACE TABLE `{project_id}.{dataset}.market_insights_best_sellers_mat
       WHERE
         _PARTITIONDATE = DATE_SUB(CURRENT_DATE(), INTERVAL 2 DAY)
         # Adjust as necessary for other locales
-        AND (product_title.locale IN ("en-US") OR product_title.locale IS NULL)
-        AND google_product_category_path.locale = "en-US"
-        AND ranking_category_path.locale  = "en-US"
+        AND (product_title.locale IN ("EU") OR product_title.locale IS NULL)
+        AND google_product_category_path.locale = "EU"
+        AND ranking_category_path.locale  = "EU"
     ),
     inventory AS (
       SELECT DISTINCT
